@@ -1,6 +1,6 @@
 Setup
 =====
-1. Setup Vagrant:  See [Vagrant Up][vagrantup.com] for details.
+1. Setup Vagrant:  See `http://vagrantup.com` for details.
 2. Clone this repo: `git clone https://github.com/nhuff/codepeople_sep2012_puppet.git`
 3. Change to whatever directory you cloned the repo to.
 4. Updated submodules: `git submodule update --init`
