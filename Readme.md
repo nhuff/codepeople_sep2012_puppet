@@ -8,6 +8,19 @@ Setup
 
 Result
 ======
+Structure
+---------
+
+You should have a directory with the following files and directories.
+* Vagrantfile: Vagrants config file
+* Readme.md: What you are reading right now
+* manifests/: Puppet manifests that the VM's run
+* modules/: Puppet modules that the VM's manifests use
+* db/: Contains sql file for db2 vm to import at database creation
+* web/: Includes web content for demo2 to serve
+
+VMs
+---
 You should end up with two vms db2 and demo2.  You can log into them by running 
 `vagrant ssh db2` and `vagrant ssh demo2`.  The webserver forwards its http port
 to port `8899` on localhost so you should be able to open a browser and go to
