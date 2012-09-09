@@ -26,6 +26,7 @@ Vagrant::Config.run do |config|
     demo2.vm.host_name = "demo2.vagrant"
 
     demo2.vm.share_folder "web-contents", "/web", "web"
+    demo2.vm.forward_port 80,8899
 
     demo2.vm.provision :puppet do |puppet|
       puppet.manifests_path = "manifests"
