@@ -1,3 +1,5 @@
+#Install apache and mod_php.
+#Create an apache vhost that runs our app
 class site::web {
   class{'apache':}
   
@@ -14,6 +16,8 @@ class site::web {
     source => 'puppet:///modules/site/'
   }
 
+  #Setup variables for template.  I would normally use something
+  #like hiera here, but keeping it simple for demo.
   $database_server   = 'db2.vagrant'
   $database_name     = 'demo2'
   $database_user     = 'demo2'

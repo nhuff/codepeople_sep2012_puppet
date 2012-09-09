@@ -1,3 +1,4 @@
+#Install mysql server and create a demo2 database.
 class site::db {
   file {'/db':
     ensure => 'directory',
@@ -10,6 +11,10 @@ class site::db {
     },
   }
 
+  #Create database. This could be defined on the client as an
+  #exported resource and then collected on the server, but that
+  #requires a puppetmaster which we don't have when using puppet apply
+  #in vagrant.
   mysql::db {'demo2':
     user     => 'demo2',
     password => 'supersecret',
