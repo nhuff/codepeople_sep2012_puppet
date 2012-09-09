@@ -4,12 +4,12 @@
 class site::common {
   host {'database':
     name => 'db2.vagrant',
-    ip   => '172.19.2.20',
+    ip   => '172.19.2.40',
   }
 
   host {'web':
     name => 'demo2.vagrant',
-    ip   => '172.19.2.10',
+    ip   => '172.19.2.30',
   }
 
   class{'apt': 
