@@ -3,7 +3,7 @@
 class site::web {
   class{'apache':}
   
-  apache::vhost{'demo2.vagrant':
+  apache::vhost{$::fqdn:
     port               => '80',
     docroot            => '/web',
     docroot_owner      => 'vagrant',
